@@ -1,3 +1,4 @@
+
 .PHONY: gizapp mkcls-v2 install clean
 
 all: gizapp mkcls-v2
