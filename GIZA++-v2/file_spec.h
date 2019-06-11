@@ -47,6 +47,7 @@ char *Get_File_Spec (){
 	  (local->tm_mon + 1), local->tm_mday, local->tm_hour, 
 	  local->tm_min, local->tm_sec);
   user = getenv("USER");
+  if (!user) { user = "no_user"; }
 
   file_spec = (char *)malloc(sizeof(char) * 
 			     (strlen(time_stmp) + strlen(user) + 1));
